@@ -1,0 +1,24 @@
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 800px;
+}
+
+.hero-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
