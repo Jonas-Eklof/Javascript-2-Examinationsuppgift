@@ -1,16 +1,14 @@
 import React from "react";
+import "./LatestProjects.css";
 
-const LatestProjects = () => {
+const LatestProjects = ({ projectTitle, projectUrl }) => {
   return (
-    <section>
-      <h2>
-        <a
-          href="https://github.com/Jonas-Eklof/KYH/tree/main/javascript-2/movie-website"
-          target="_blank"
-        >
-          Movie Website
+    <section className="latest-projekt">
+      <h3 className="latest-project-title">
+        <a href={projectUrl} target="_blank">
+          {projectTitle}
         </a>
-      </h2>
+      </h3>
     </section>
   );
 };

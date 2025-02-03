@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -15,9 +16,15 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <h1>Jonas Eklöf</h1>
         <ul className="nav-links">
-          <li>Om mig</li>
-          <li>Projekt</li>
-          <li>Kontakt</li>
+          <Link to="/">
+            <li>Om mig</li>
+          </Link>
+          <Link to="/projekt">
+            <li>Projekt</li>
+          </Link>
+          <Link to="/kontakt">
+            <li>Kontakt</li>
+          </Link>
         </ul>
       </div>
     </nav>
