@@ -8,7 +8,6 @@ function App() {
       <Header />
       <div className="main-content">
         <Routes>
-          {/* <OmMig /> */}
           <Route path="/" element={<OmMig />} />
         </Routes>
       </div>

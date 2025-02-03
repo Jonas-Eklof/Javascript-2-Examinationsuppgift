@@ -42,6 +42,17 @@
   background-color: #d9d9d928;
   border-radius: 1rem;
   padding: 2rem;
-  display: flex;
-  justify-content: space-around;
+  margin-top: 2.5rem;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+.latest-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

@@ -6,10 +6,9 @@
   height: 100px;
 
   /* Animation */
-  position: relative;
-  top: -100px; /* Börjar utanför skärmen */
-  left: 0;
-  animation: slideDown 1.2s ease-out forwards;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 
   h1 {
     font-size: 2rem;
@@ -18,22 +17,15 @@
   }
 }
 
-/* Keyframes för slide-down */
-@keyframes slideDown {
-  from {
-    top: -100px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+.navbar.slide-down {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .nav-links {
   display: flex;
   gap: 3rem;
-  margin-top: 5px;
+  margin-top: 15px;
 
   li {
     text-decoration: none;

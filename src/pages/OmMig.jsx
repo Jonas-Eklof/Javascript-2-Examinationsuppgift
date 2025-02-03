@@ -1,7 +1,8 @@
-import React from "react";
+// import React, { useEffect, useState } from "react";
 import HeroText from "../components/maincontent/HeroText";
 import profilepicture from "../assets/images/profile-picture.jpg";
 import "./OmMig.css";
+import LatestProjects from "../components/latest projects/LatestProjects";
 
 const OmMig = () => {
   return (
@@ -10,9 +11,12 @@ const OmMig = () => {
       <img src={profilepicture} className="profile-img" alt="" />
 
       <div className="latest-wrapper">
-        <section>Projekt 1</section>
-        <section>Projekt 2</section>
-        <section>Projekt 3</section>
+        <h2>Mina senaste projekt</h2>
+        <div className="latest-projects">
+          <LatestProjects />
+          <LatestProjects />
+          <LatestProjects />
+        </div>
       </div>
     </div>
   );
