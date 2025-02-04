@@ -1,14 +1,13 @@
-import React from "react";
-import profilepicture from "../assets/images/profile-picture.jpg";
 import "./Projekt.css";
+
+import SideBar from "../components/sidebar/SideBar";
+import ProjektList from "../components/projekt-list/ProjektList";
 
 const Projekt = () => {
   return (
     <div className="projekt-wrapper">
-      <div className="sidebar-wrapper">
-        <img src={profilepicture} alt="Profile Picture" />
-      </div>
-      <div className="projekt-content"></div>
+      <SideBar />
+      <ProjektList />
     </div>
   );
 };

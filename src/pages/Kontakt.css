@@ -16,12 +16,31 @@
     flex-direction: column;
     gap: 1.2rem;
 
+    input,
+    textarea {
+      background-color: #17171790;
+      padding: 1rem;
+      border: 1px solid #777;
+      border-radius: 0.4rem;
+    }
+
     textarea {
       min-height: 10rem;
     }
 
     button {
       cursor: pointer;
+      padding: 0.7rem 1rem;
+      width: 5rem;
+      border-radius: 0.4rem;
+      background-color: #17171790;
+      border: 1px solid #777;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #333;
+        color: rgb(64, 152, 224);
+      }
     }
   }
 }

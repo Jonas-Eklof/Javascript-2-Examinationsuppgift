@@ -19,3 +19,7 @@ body {
   max-width: 1200px;
   margin-inline: auto;
 }
+
+a:hover {
+  color: rgb(64, 152, 224);
+}

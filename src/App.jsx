@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/header/Header";
 import OmMig from "./pages/OmMig";
 import Projekt from "./pages/Projekt";
@@ -10,7 +10,8 @@ function App() {
       <Header />
       <div className="main-content">
         <Routes>
-          <Route path="/" element={<OmMig />} />
+          <Route path="/" element={<Navigate to="/om-mig" replace />} />
+          <Route path="/om-mig" element={<OmMig />} />
           <Route path="/projekt" element={<Projekt />} />
           <Route path="/kontakt" element={<Kontakt />} />
         </Routes>

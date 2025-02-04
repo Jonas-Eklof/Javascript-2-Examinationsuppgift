@@ -6,10 +6,15 @@ const Kontakt = () => {
     <div className="kontakt-wrapper">
       <div className="form-wrapper">
         <form action="">
-          <input type="text" placeholder="Namn.." />
-          <input type="email" placeholder="Email.." />
-          <textarea name="" id="" placeholder="Ditt meddelande..."></textarea>
-          <button type="submit">Send</button>
+          <input type="text" placeholder="Namn.." required />
+          <input type="email" placeholder="Email.." required />
+          <textarea
+            name=""
+            id=""
+            placeholder="Ditt meddelande..."
+            required
+          ></textarea>
+          <button type="submit">Skicka</button>
         </form>
       </div>
     </div>
