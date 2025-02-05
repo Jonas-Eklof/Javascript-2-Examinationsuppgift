@@ -1,6 +1,7 @@
 import React from "react";
 import profilepicture from "../../assets/images/profile-picture.jpg";
 import LanguageChart from "../../components/languagechart/LanguageChart";
+import Skills from "../skills/Skills";
 
 const SideBar = () => {
   const languages = [
@@ -13,6 +14,7 @@ const SideBar = () => {
     <div className="sidebar-wrapper">
       <img src={profilepicture} alt="Profile Picture" />
       <LanguageChart data={languages} />
+      <Skills />
     </div>
   );
 };

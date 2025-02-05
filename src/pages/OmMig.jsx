@@ -1,5 +1,5 @@
 // import React, { useEffect, useState } from "react";
-import HeroText from "../components/maincontent/HeroText";
+import HeroText from "../components/hero-section/HeroText";
 import profilepicture from "../assets/images/profile-picture.jpg";
 import "./OmMig.css";
 import LatestProjects from "../components/latest projects/LatestProjects";

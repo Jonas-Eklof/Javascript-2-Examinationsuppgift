@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setProjects } from "../../store/store";
 
 const ProjektList = () => {
-  const [repoList, setRepoList] = useState([]);
+  const dispatch = useDispatch();
+  const repoList = useSelector((state) => state.projects.projects);
 
   useEffect(() => {
     fetch("https://api.github.com/users/Jonas-Eklof/repos")
       .then((response) => response.json())
-      .then((data) => setRepoList(data))
+      .then((data) => dispatch(setProjects(data)))
       .catch((error) => console.error("Error fetching repos", error));
-  }, []);
+  }, [dispatch]);
   return (
     <div className="projekt-content">
       <ul className="projekt-list">
