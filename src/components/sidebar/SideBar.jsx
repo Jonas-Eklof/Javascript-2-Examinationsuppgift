@@ -2,6 +2,7 @@ import React from "react";
 import profilepicture from "../../assets/images/profile-picture.jpg";
 import LanguageChart from "../../components/languagechart/LanguageChart";
 import Skills from "../skills/Skills";
+import "./Sidebar.css";
 
 const SideBar = () => {
   const languages = [

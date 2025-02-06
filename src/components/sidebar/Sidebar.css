@@ -1,0 +1,24 @@
+.sidebar-wrapper {
+  width: 50%;
+  min-height: 80vh;
+  background-color: #d9d9d928;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  text-align: center;
+
+  img {
+    animation: imageSlide 1s ease-out forwards;
+  }
+}
+
+@keyframes imageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
