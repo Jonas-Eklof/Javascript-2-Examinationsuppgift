@@ -1,6 +1,6 @@
 # Mitt Digitala CV i React
 
-Detta är en interaktiv webbplats som fungerar som mitt digitala CV. Webbplatsen visar information om mig, mina projekt och kontaktuppgifter.
+Detta är en webbsida som fungerar som mitt digitala CV. Webbplatsen visar information om mig, mina projekt och ger möjlighet för kontakt.
 
 ## Funktioner
 
