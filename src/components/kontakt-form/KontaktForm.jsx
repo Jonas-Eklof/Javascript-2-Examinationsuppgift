@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 const KontaktForm = () => {
   const nameInputRef = useRef(null);
 
+  // sätter focus på namn-input direkt när sidan laddas/komponenten mountas
   useEffect(() => {
     nameInputRef.current.focus();
   }, []);
@@ -10,6 +11,7 @@ const KontaktForm = () => {
   return (
     <div className="kontakt-wrapper">
       <div className="form-wrapper">
+        <h1>Hör gärna av dig!</h1>
         <form action="">
           <input type="text" ref={nameInputRef} placeholder="Namn.." required />
           <input type="email" placeholder="Email.." required />

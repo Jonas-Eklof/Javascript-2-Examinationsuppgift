@@ -12,6 +12,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    // Är visible true (när komponenten mountas) så lägg till klassen "slide-down" som aktiverar animationen
     <nav className={`navbar ${visible ? "slide-down" : ""}`}>
       <div className="nav-wrapper">
         <h1>Jonas Eklöf</h1>

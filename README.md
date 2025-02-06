@@ -1,8 +1,24 @@
-# React + Vite
+# Mitt Digitala CV i React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är en interaktiv webbplats som fungerar som mitt digitala CV. Webbplatsen visar information om mig, mina projekt och kontaktuppgifter.
 
-Currently, two official plugins are available:
+## Funktioner
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dynamisk navigation med React Router
+- Projektlista hämtas från GitHub API
+- Redux för global statehantering
+- Interaktiv färdighetslista med useState
+
+## Installation
+
+1. Klona repot:
+
+- git clone https://github.com/Jonas-Eklof/cv-webbplats.git
+
+2. Installera beroenden:
+
+- npm install (eller: npm i)
+
+3. Starta utvecklingsservern:
+
+- npm run dev

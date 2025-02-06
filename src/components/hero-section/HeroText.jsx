@@ -10,18 +10,18 @@ const HeroText = () => {
   useEffect(() => {
     // Dela upp texten i rader, "." används för att bryta mellan meningarna.
     setLines(
-      text
-        .split(". ")
-        .map(
-          (line, index) =>
-            line + (index < text.split(". ").length - 1 ? "." : "")
-        )
+      text.split(". ").map(
+        (line, index) =>
+          // Sätter tillbaka punkt i slutet av alla meningar utom den sista.
+          line + (index < text.split(". ").length - 1 ? "." : "")
+      )
     );
   }, []);
 
   return (
     <p className="hero-text">
       {lines.map((line, index) => (
+        // Ger varje mening en unik animeringsfördröjning för att skapa effekten att meningarna kommer in en och en och inte alla samtidigt.
         <span key={index} style={{ animationDelay: `${index * 0.2}s` }}>
           {line}
         </span>

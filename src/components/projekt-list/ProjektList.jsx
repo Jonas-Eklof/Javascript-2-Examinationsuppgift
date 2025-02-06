@@ -7,6 +7,7 @@ const ProjektList = () => {
   const repoList = useSelector((state) => state.projects.projects);
 
   useEffect(() => {
+    // Hämtar data från Githubs API och skickar datan med Redux dispatch()
     fetch("https://api.github.com/users/Jonas-Eklof/repos")
       .then((response) => response.json())
       .then((data) => dispatch(setProjects(data)))
