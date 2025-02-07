@@ -13,7 +13,7 @@ Detta är en webbsida som fungerar som mitt digitala CV. Webbplatsen visar infor
 
 1. Klona repot:
 
-- git clone https://github.com/Jonas-Eklof/cv-webbplats.git
+- git clone https://github.com/Jonas-Eklof/Javascript-2-Examinationsuppgift.git
 
 2. Installera beroenden:
 
