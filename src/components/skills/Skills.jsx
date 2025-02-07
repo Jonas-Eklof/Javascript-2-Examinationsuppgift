@@ -17,14 +17,14 @@ const Skills = () => {
     <div className="skills-container">
       <h2>Färdigheter</h2>
       <ul className="skills-list">
-        {/* När du trycker på en knapp så får du fram tillhörande data för den "skillen" */}
+        {/* När du trycker på en knapp så får du fram tillhörande data för den "skillen" som sparas i setSelectedSkill state */}
         {skillsData.map((skill, index) => (
           <li key={index} onClick={() => setSelectedSkill(skill)}>
             {skill.name}
           </li>
         ))}
       </ul>
-      {/* Om "selectedSkill = true så visas koden innanför parentesen" */}
+      {/* Om "selectedSkill = true" så visas informationen som sparats i selectedSkill state */}
       {selectedSkill && (
         <div className="skills-details">
           <h3>{selectedSkill.name}</h3>

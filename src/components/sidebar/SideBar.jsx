@@ -12,11 +12,13 @@ const SideBar = () => {
     { language: "SCSS", percentage: 6.4, color: "#c6538c" },
   ];
   return (
-    <div className="sidebar-wrapper">
-      <img src={profilepicture} alt="Profile Picture" />
+    <aside className="sidebar-wrapper">
+      <figure>
+        <img src={profilepicture} alt="Profile Picture" />
+      </figure>
       <LanguageChart data={languages} />
       <Skills />
-    </div>
+    </aside>
   );
 };
 

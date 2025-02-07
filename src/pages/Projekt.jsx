@@ -5,10 +5,10 @@ import ProjektList from "../components/projekt-list/ProjektList";
 
 const Projekt = () => {
   return (
-    <div className="projekt-wrapper">
+    <main className="projekt-wrapper">
       <SideBar />
       <ProjektList />
-    </div>
+    </main>
   );
 };
 

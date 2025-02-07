@@ -9,8 +9,8 @@ const KontaktForm = () => {
   }, []);
 
   return (
-    <div className="kontakt-wrapper">
-      <div className="form-wrapper">
+    <main className="kontakt-wrapper">
+      <section className="form-wrapper">
         <h1>Hör gärna av dig!</h1>
         <form action="">
           <input type="text" ref={nameInputRef} placeholder="Namn.." required />
@@ -23,8 +23,8 @@ const KontaktForm = () => {
           ></textarea>
           <button type="submit">Skicka</button>
         </form>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

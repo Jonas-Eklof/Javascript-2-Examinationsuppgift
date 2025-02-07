@@ -13,22 +13,33 @@ const ProjektList = () => {
       .then((data) => dispatch(setProjects(data)))
       .catch((error) => console.error("Error fetching repos", error));
   }, [dispatch]);
+
   return (
-    <div className="projekt-content">
+    <section className="projekt-content" aria-labelledby="projekt-title">
       <ul className="projekt-list">
         {repoList
           .slice()
           .reverse()
           .map((repo) => (
             <li className="projekt-item" key={repo.id}>
-              <a href={repo.html_url} alt={repo.name} target="_blank">
-                <h2>{repo.name}</h2>
-              </a>
-              <p>{repo.description}</p>
+              <article>
+                <h2>
+                  <a
+                    href={repo.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Öppna ${repo.name} på GitHub`}
+                  >
+                    {repo.name}
+                  </a>
+                </h2>
+                {/* Om "repo.description" inte finns tillgänglig så visas istället strängen "Ingen beskrivning tillgänglig" */}
+                <p>{repo.description || "Ingen beskrivning tillgänglig."}</p>
+              </article>
             </li>
           ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

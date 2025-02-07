@@ -8,7 +8,9 @@ const LatestProjects = ({ projectTitle, projectUrl, imgUrl }) => {
         <a href={projectUrl} target="_blank">
           {projectTitle}
           <div className="latest-project-img">
-            <img src={imgUrl} alt={imgUrl} />
+            <figure>
+              <img src={imgUrl} alt={imgUrl} />
+            </figure>
           </div>
         </a>
       </h3>
