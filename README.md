@@ -22,3 +22,5 @@ Detta är en webbsida som fungerar som mitt digitala CV. Webbplatsen visar infor
 3. Starta utvecklingsservern:
 
 - npm run dev
+
+## Länk till webbsidan: https://jonas-eklof.github.io/Javascript-2-Examinationsuppgift/
