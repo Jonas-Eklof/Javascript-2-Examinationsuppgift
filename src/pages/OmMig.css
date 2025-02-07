@@ -1,6 +1,7 @@
 .hero {
   text-align: left;
   margin: 5% auto;
+  margin-bottom: 1.5rem;
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -41,7 +42,6 @@
   background-color: #d9d9d928;
   border-radius: 1rem;
   padding: 2rem;
-  margin-top: 2.5rem;
   text-align: center;
   opacity: 0;
   animation: slideUp 1.2s linear forwards;
