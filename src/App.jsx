@@ -10,6 +10,7 @@ function App() {
       <Header />
       <div className="main-content">
         <Routes>
+          {/* Ändrar så att "om mig"-sidan är förstasidan */}
           <Route path="/" element={<Navigate to="/om-mig" replace />} />
           <Route path="/om-mig" element={<OmMig />} />
           <Route path="/projekt" element={<Projekt />} />
